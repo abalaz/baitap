@@ -1,0 +1,88 @@
+
+@use "../../../assets/scss/index.scss" as*;
+.footer{
+    background-color: #393E46;
+    max-width: 1440px;
+    display: flex;
+    padding: 80px 120px;
+    justify-content: space-between;
+  
+    .footer-left{
+        width: 480px;
+        .footer-head{
+            display: flex;
+            .footer-img{
+                object-fit: contain;
+            }
+            .footer-title{
+                color:#fff;
+                padding-left: 9px;
+            }
+        }
+        .footer-description{
+            p{
+                font-size: 14px;
+                line-height: 35px;
+                color: #F4F4F4;
+                font-weight: 200;
+                letter-spacing: 1px;
+            }
+        }
+        .footer-login{
+            background-color: #fff;
+            width: 180px;
+            .btn{
+                border: none;
+                font-size: 18px;
+                font-weight: 700;
+                padding: 10.5px 42.5px;
+                cursor: pointer;
+            }
+            .footer-btn{
+                background: -webkit-linear-gradient(#7D89FF, #AB40FF);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        
+    }
+    .footer-mid{
+        display: flex;
+        gap: 100px;
+        .footer-option{
+            color:#fff;
+            font-size: 18px;
+            ul{
+                color:#fff;
+                font-size: 17px;
+                font-weight: 500;
+                padding: 0; 
+                li{
+                    list-style: none;
+                    font-size: 14px;
+                    font-weight: 300;
+                    padding:0 0 11px 0;
+                    color: #F4F4F4;
+                }
+            }
+        }
+        
+    }
+    .footer-right{
+        .footer-contact{
+            display: inline-block;
+            color: #fff;
+            font-size: 18px;
+        }
+        p{
+            color: #F4F4F4;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        .footer-social {
+            display: flex;
+            gap: 16px;
+        }
+    }
+}
+

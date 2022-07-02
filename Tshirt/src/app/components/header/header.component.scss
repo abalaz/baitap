@@ -1,0 +1,98 @@
+@use "../../../assets/scss/index.scss" as*;
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    justify-content: space-between;
+    padding: 23px 121px;
+    height: 80px;
+    white-space: nowrap;
+    
+    .header-right{
+        display: flex;
+       
+        .header-img{
+            object-fit: contain;
+        }
+        .header-title{
+            font-size: 14px;
+            font-weight: 600;
+            padding-left: 9px;
+        }
+    }
+    .header-left{
+        display: flex;
+        align-items: center;
+       
+        .option{
+            &:hover{
+                color: #5463FF;
+            }
+            &:hover::before{
+                content: "";
+                position: absolute;
+                top: 25px;
+                left: 25%;
+                width: 6px;
+                height: 6px;
+                background-color: #5463FF;
+                transition: all .3s linear;
+                border-radius: 100%;
+            }
+            font-size: 18px;
+            padding-right: 40px;
+            transition: all .3s linear;
+            cursor: pointer;
+            position: relative;
+        }      
+        .header-icon{
+            display: flex;
+            align-items: center;
+            .favorite{
+                position: relative;
+                .favorite-notification{
+                    position: absolute;
+                    background-color: #EF8484;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 100%;
+                    text-align: center;
+                    font-size: 12px;
+                    display: block;
+                    align-items: center;
+                    color: #fff;
+                    top: 1px;
+                    right: 68px;
+                }
+            }
+            .icon-img{
+                width: 24px;
+                padding-right: 24px;
+            }
+        }
+        .header-search{
+            border: 2px solid #969696;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 246px;
+            height: 48px;
+            display: flex;
+            
+            input{
+                border: none;
+                outline: none;
+                height: 100%;
+               flex: 1;
+                padding-left: 16px;
+                }
+            .img-search{
+                padding-right: 16px;
+                object-fit: contain;
+                width: 18px;
+                
+                
+            }
+        }
+    }
+}
